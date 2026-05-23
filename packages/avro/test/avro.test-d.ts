@@ -1,6 +1,6 @@
 import { it, expectTypeOf } from 'vitest';
-import type { AvroSchema, AvroType } from '..';
-import type { QobuzTrack } from './qobuz-track.d';
+import type { AvroSchema, AvroType } from '@type-map-for/avro';
+import type { QobuzTrack } from '../../../test/fixtures/qobuz-track.d';
 
 type Schema = AvroSchema<QobuzTrack>;
 type Field<K extends keyof QobuzTrack> = Extract<Schema['fields'][number], { name: K }>;

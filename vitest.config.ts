@@ -3,9 +3,10 @@ import { defineConfig } from 'vitest/config';
 export default defineConfig({
   test: {
     typecheck: {
-      enabled:  true,
-      include:  ['test/**/*.test-d.ts'],
+      enabled: true,
+      tsconfig: './tsconfig.json',
+      include:  ['packages/*/test/**/*.test-d.ts'],
     },
-    include: [],   // no runtime tests yet — types only
+    include: [],
   },
 });

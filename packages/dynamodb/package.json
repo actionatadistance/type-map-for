@@ -1,0 +1,22 @@
+{
+  "name": "@type-map-for/dynamodb",
+  "version": "0.1.0",
+  "description": "Compile-time TypeScript → DynamoDB field mapping",
+  "license": "MIT",
+  "author": "Nathan Frenette",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts" }
+  },
+  "files": ["dist", "src"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "publishConfig": { "access": "public" },
+  "dependencies": {
+    "@type-map-for/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "*"
+  }
+}

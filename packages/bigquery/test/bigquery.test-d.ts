@@ -1,6 +1,6 @@
 import { it, expectTypeOf } from 'vitest';
-import type { BigQueryFieldMap } from '..';
-import type { QobuzTrack } from './qobuz-track.d';
+import type { BigQueryFieldMap } from '@type-map-for/bigquery';
+import type { QobuzTrack } from '../../../test/fixtures/qobuz-track.d';
 
 type BqMap = BigQueryFieldMap<QobuzTrack>;
 type BqField<K extends keyof QobuzTrack> = Extract<BqMap[number], { name: K }>;

@@ -1,6 +1,6 @@
 import { it, expectTypeOf } from 'vitest';
-import type { PostgresFieldMap } from '..';
-import type { QobuzTrack } from './qobuz-track.d';
+import type { PostgresFieldMap } from '@type-map-for/postgres';
+import type { QobuzTrack } from '../../../test/fixtures/qobuz-track.d';
 
 type PgMap = PostgresFieldMap<QobuzTrack>;
 type PgField<K extends keyof QobuzTrack> = Extract<PgMap[number], { column: K }>;

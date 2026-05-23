@@ -1,6 +1,6 @@
 import { it, expectTypeOf } from 'vitest';
-import type { MongoSchema, RequiredKeys } from '..';
-import type { QobuzTrack } from './qobuz-track.d';
+import type { MongoSchema, RequiredKeys } from '@type-map-for/mongodb';
+import type { QobuzTrack } from '../../../test/fixtures/qobuz-track.d';
 
 type Schema = MongoSchema<QobuzTrack>;
 

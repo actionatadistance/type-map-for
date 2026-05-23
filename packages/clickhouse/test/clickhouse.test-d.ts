@@ -1,6 +1,6 @@
 import { it, expectTypeOf } from 'vitest';
-import type { ClickHouseSchema, ChType } from '..';
-import type { QobuzTrack } from './qobuz-track.d';
+import type { ClickHouseSchema, ChType } from '@type-map-for/clickhouse';
+import type { QobuzTrack } from '../../../test/fixtures/qobuz-track.d';
 
 type Schema = ClickHouseSchema<QobuzTrack>;
 type Col<K extends keyof QobuzTrack> = Extract<Schema[number], { name: K }>;

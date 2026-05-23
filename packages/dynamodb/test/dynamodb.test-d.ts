@@ -1,6 +1,6 @@
 import { it, expectTypeOf } from 'vitest';
-import type { DynamoDBSchema } from '..';
-import type { QobuzTrack } from './qobuz-track.d';
+import type { DynamoDBSchema } from '@type-map-for/dynamodb';
+import type { QobuzTrack } from '../../../test/fixtures/qobuz-track.d';
 
 type Schema = DynamoDBSchema<QobuzTrack>;
 type Attr<K extends keyof QobuzTrack> = Extract<Schema[number], { AttributeName: K }>;

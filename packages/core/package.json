@@ -1,0 +1,19 @@
+{
+  "name": "@type-map-for/core",
+  "version": "0.1.0",
+  "description": "Compile-time field-mapping primitives — FieldTypeFor, MapType, and type utilities",
+  "license": "MIT",
+  "author": "Nathan Frenette",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts" }
+  },
+  "files": ["dist", "src"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "publishConfig": { "access": "public" },
+  "devDependencies": {
+    "typescript": "*"
+  }
+}

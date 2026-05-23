@@ -1,6 +1,6 @@
 import { it, expectTypeOf } from 'vitest';
-import type { TypesenseFieldMap } from '..';
-import type { QobuzTrack } from './qobuz-track.d';
+import type { TypesenseFieldMap } from '@type-map-for/typesense';
+import type { QobuzTrack } from '../../../test/fixtures/qobuz-track.d';
 
 type TsMap = TypesenseFieldMap<QobuzTrack>;
 type TsField<K extends keyof QobuzTrack> = Extract<TsMap[number], { name: K }>;

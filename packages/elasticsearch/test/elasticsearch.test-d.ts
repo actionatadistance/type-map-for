@@ -1,5 +1,5 @@
 import { it, expectTypeOf } from 'vitest';
-import type { ElasticsearchProperties } from '..';
+import type { ElasticsearchProperties } from '@type-map-for/elasticsearch';
 
 /* ── test interface with nested objects ─────────────────────────── */
 interface Artist {
