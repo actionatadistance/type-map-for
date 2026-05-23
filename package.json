@@ -1,0 +1,19 @@
+{
+  "name": "type-map-for",
+  "author": "Nathan Frenette",
+  "version": "0.1.0",
+  "description": "Compile-time safe field-mapping utilities",
+  "license": "ASKME",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.d.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test":  "vitest run --typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "vitest": "^4.1.7"
+  }
+}
